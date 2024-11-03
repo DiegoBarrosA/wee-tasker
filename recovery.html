@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Webpage description goes here" />
+        <meta charset="utf-8" />
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div id="navigation-bar"></div>
+        <div class="p-20 container">
+            <h2 class="text-3xl text-center">Recover your account</h2>
+
+            <div class="p-10">
+                <p class="text-center text-gray-500 px-5">
+                    Please provide your email and we will send you the means to
+                    recover your password
+                </p>
+            </div>
+            <form
+                onsubmit="recoverPassword()"
+                class="max-w-md mx-auto needs-validation"
+                novalidate
+            >
+                <div class="relative z-0 w-full mb-5 group">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class=""
+                        placeholder=" "
+                        required
+                    />
+                    <label for="floating_email" class="">Email address</label>
+                </div>
+
+                <button
+                    type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                    Submit
+                </button>
+            </form>
+        </div>
+        <script src="./js/register.js"></script>
+
+        <script src="./js/db.js"></script>
+
+        <script src="./js/style.js"></script>
+    </body>
+</html>
